@@ -1,0 +1,147 @@
+
+.img {
+  width: 20px;
+  margin: 0px, 30px;
+}
+.head {
+  text-align: center;
+  font-size: larger;
+  color: #1d5152;
+  font-style: italic;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -650px;
+  background: #fff;
+  padding-bottom: 30px;
+  width: 600px;
+  margin-left: 650px;
+}
+.btn1 button {
+  padding: 10px 35px;
+  margin-top: 20px;
+  margin-left: 13rem;
+  border-radius: 40px;
+  background-color: #1d5152;
+  color: #ffffff;
+  font-size: 24px;
+}
+.btn1 p {
+  padding: 4px;
+  margin-top: 2px;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.88px;
+  text-align: center;
+}
+.btn1 img {
+  width: 30px;
+  margin-left: 1rem;
+}
+.btn2 button {
+  padding: 10px 35px;
+  margin-top: 20px;
+  margin-left: 13rem;
+  border-radius: 40px;
+  background-color: #1d5152;
+  color: #ffffff;
+  font-size: 24px;
+}
+.btn2 img {
+  width: 30px;
+  margin-left: 1rem;
+}
+.btn2 button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #d6e2e2;
+  color: #1d5152;
+}
+.btn1 button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #d6e2e2;
+  color: #1d5152;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.inputs {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #1d5152;
+}
+.input {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 48px;
+  background: #d6e2e2;
+  border-radius: 15px;
+}
+.input .img {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.input input {
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #d6e2e2;
+  color: #1d5152;
+  font-size: 19px;
+}
+.forgot-password {
+  padding-left: 69px;
+  margin-top: 27px;
+  color: #1d5152;
+  font-size: 18px;
+}
+
+.forgot-password span {
+  color: #1d5152;
+  text-decoration: none;
+  cursor: pointer;
+}
+.forgot-password a{
+  text-decoration: none;
+}
+
+.submit-container {
+  display: flex;
+  gap: 0;
+  margin: 10px auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  background: #1d5152;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.gray {
+  background: #d6e2e2;
+  color: #1d5152;
+}

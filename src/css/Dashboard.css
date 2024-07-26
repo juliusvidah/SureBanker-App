@@ -1,0 +1,443 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+.suretips-section {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+.financial-status-section {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.savings-section {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+
+.transactions-section {
+  grid-column: 1 / span 1;
+  grid-row: 3;
+}
+
+.quick-analysis-section {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.income-expenses-section {
+  grid-column: 3 / span 1;
+  grid-row: 2;
+}
+
+.set-budget-section {
+  grid-column: 3 / span 1;
+  grid-row: 3;
+}
+
+.suretips-section,
+.financial-status-section,
+.savings-section,
+.quick-analysis-section,
+.income-expenses-section,
+.set-budget-section,
+.transactions-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* suretip */
+
+
+.suretips-section h2 {
+  margin-bottom: 20px;
+  color: #093030;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+.back-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+
+.showcase {
+  transform: translateX(0);
+}
+
+.left {
+  transform: translateX(-100%);
+}
+
+.right {
+  transform: translateX(100%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: white;
+}
+
+.slide-info p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.slide-info button {
+  padding: 10px 20px;
+  background-color: #1d5152;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slide-info button:hover {
+  background-color: #093030;
+}
+
+.slide-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Financial Status Section */
+.financial-status-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px; /* Space between columns */
+}
+
+.financial-status-section h3 {
+  margin-bottom: 10px;
+  color: #093030;
+}
+
+.fin-status {
+  flex: 2; /* Takes up more space in the two-column layout */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between header, content, and bar */
+}
+
+.financial-status-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between income and expenses */
+}
+
+.financial-income,
+.financial-expenses {
+  display: flex;
+  flex-direction: row; /* Arrange children horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the start */
+  padding: 20px;
+  background-color: #ffffff; /* Background color similar to grid-item */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Ensure items take equal space */
+}
+
+.financial-income img,
+.financial-expenses img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.financial-income h2,
+.financial-expenses h2 {
+  margin: 0 10px 0 0;
+  color: #1D5152;
+  font-size: 18px; /* Emphasize the amount */
+  font-weight: bold;
+}
+
+.financial-income p,
+.financial-expenses p {
+  margin: 0;
+  color: #1D5152;
+}
+
+.financial-status-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1D5152;
+  border-radius: 5px;
+}
+
+.financial-status-section p {
+  margin: 0;
+  color: #666;
+}
+
+.balance {
+  flex: 1; /* Takes up less space in the two-column layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff; /* Optional background for better visibility */
+  border-radius: 10px;
+}
+
+.balance h3,
+.balance h2 {
+  margin: 20px;
+  color: #093030;
+  ;
+}
+
+.balance button {
+  background-color: #1D5152;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.balance button:hover {
+  background-color: #093030;
+}
+
+/* Savings Section */
+.savings-section {
+  background-color: #1D5152;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.savings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  background-color: #1D5152;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #1D5152;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.grid-item h3 {
+  margin: 10px 0 0 0;
+  color: #fff;
+}
+
+.grid-item p {
+  margin: 0;
+  color: #fff;
+}
+
+.grid-item strong p {
+  margin: 0;
+  font-size: 18px; /* Emphasize the amount */
+  font-weight: bold;
+  color: #fff;
+}
+
+.item1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.item2, .item3 {
+  grid-column: 2 / span 2;
+  display: flex; /* Make the item a flex container */
+  flex-direction: row; /* Arrange children horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the start */
+  padding: 0 20px; /* Add padding to space out the content */
+}
+
+.item2 {
+  grid-row: 1 / span 1;
+}
+
+.item3 {
+  grid-row: 2 / span 1;
+}
+
+.item2 img, .item3 img {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.item2 h4, .item3 h4 {
+  margin: 0 10px 0 0;
+}
+
+.item2 strong, .item3 strong {
+  margin-left: auto;
+  font-size: 18px; /* Emphasize the amount */
+  font-weight: bold;
+  color: #1D5152;
+  margin-top: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+  justify-content: flex-start; /* Align text to the left */
+}
+
+
+/* quick-analysis-section */
+
+
+.quick-analysis-section {
+  margin: 20px 0;
+}
+
+.quick-analysis-section h3 {
+  margin-bottom: 20px;
+  color: #093030;
+}
+
+/* Style the tab */
+.quick-analysis-tabs {
+  overflow: hidden;
+  background-color:  #DFF7E2;
+  border-radius: 15px;
+}
+
+/* Style the buttons inside the tab */
+.quick-analysis-tabs button {
+  background-color: inherit;
+  border: none;
+  align-self: center;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.quick-analysis-tabs button:hover {
+  background-color:  #1D5152;
+  ;
+}
+
+/* Create an active/current tablink class */
+.quick-analysis-tabs button.active {
+  background-color: #1D5152;
+  
+}
+
+/* Style the tab content */
+.quick-analysis-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.analysis-item {
+  margin: 10px 0;
+}
+
+.analysis-item p {
+  margin: 0;
+}

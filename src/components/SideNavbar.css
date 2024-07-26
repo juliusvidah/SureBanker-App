@@ -1,0 +1,71 @@
+/* src/components/SideNavbar.css */
+.side-navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px; /* Collapsed width */
+    background-color: #093030;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px 0;
+    transition: width 0.3s ease; /* Smooth transition */
+    overflow: hidden; /* Hide overflow content */
+    z-index: 900; /* Ensure it stays on top */
+}
+
+.side-navbar.expanded {
+    width: 250px; /* Expanded width */
+    background-color: #093030;
+}
+
+.sblogo {
+    display: flex;
+    
+   
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.sblogo img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    justify-self: flex-start;
+    padding-left: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:25px 35px; /* Adjust padding to include space from edge */
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* Remove link underline */
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-item:hover {
+    background-color: #1D5152;
+}
+
+.nav-item span {
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.side-navbar.expanded .nav-item span {
+    opacity: 1;
+}
+
+.nav-item svg {
+    font-size: 1.5em;
+    margin-right: 10px; /* Space between icon and text */
+}

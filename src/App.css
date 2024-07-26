@@ -1,0 +1,16 @@
+/* src/App.css */
+.app {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 80px; /* Adjust to match the collapsed width of the sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+.side-navbar.expanded + .content {
+  margin-left: 250px; /* Adjust to match the expanded width of the sidebar */
+}
+
