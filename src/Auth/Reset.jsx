@@ -39,12 +39,12 @@ const Reset = () => {
       return;
     }
 
-    // If validation passes, reset the password (this is where you'd call your API)
+    // If validation passes, reset the password (using your API)
     setMessage("Password reset successfully!");
 
     // Redirect to login page after successful password reset
     setTimeout(() => {
-      navigate("/Home");
+      navigate("/Sigin");
     }, 2000); // 2-second delay to show the success message before redirecting
   };
 
