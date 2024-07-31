@@ -1,27 +1,152 @@
-.budget-content {
-    padding: 20px;
-    background-color: var(--neutral-color);
-    height: 100vh; /* Ensure the content takes up the full height of the viewport */
-  }
-  
-  .budget-welcome {
-    text-align: center;
-    padding: 40px;
-    border: 1px solid var(--accent-color);
-    border-radius: 8px;
-    background-color: var(--primary-color);
-    color: var(--neutral-color);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .budget-welcome h1 {
-    font-size: 2rem; /* 32px */
-    margin-bottom: 10px;
-  }
-  
-  .budget-welcome p {
-    font-size: 1.125rem; /* 18px */
-    margin: 0;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding-left: 0;
+}
+
+.budget-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-page h1,
+.budget-page h2 {
+  color: #135915;
+  text-align: center;
+}
+
+.budget-summary,
+.income-section,
+.expenses-section {
+  margin-bottom: 20px;
+}
+
+.budget-summary label {
+  font-weight: bold;
+}
+
+.budget-summary input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.budget-summary p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.income-section input,
+.expenses-section input,
+.expenses-section select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.income-section input::placeholder,
+.expenses-section input::placeholder {
+  color: #888;
+}
+
+.expenses-section form {
+  margin-bottom: 20px;
+}
+
+.expenses-section button {
+  padding: 10px 20px;
+  background-color: #135915;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.expenses-section button:hover {
+  background-color: #135915;
+}
+
+.ed {
+  margin: 1rem;
+}
+.expense-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-list li {
+  background: #fafafa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-list span {
+  flex-grow: 1;
+}
+
+.expense-list button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.expense-list button:hover {
+  background-color: #e5533d;
+}
+.budget-summary {
+  margin-bottom: 20px;
+}
+
+.budget-summary .bar-container {
+  position: relative;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.budget-summary .bar {
+  position: absolute;
+  height: 100%;
+  transition: width 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.income-bar {
+  background-color: #4caf50;
+}
+
+.expenses-bar {
+  background-color: red;
+}
+
+.remaining-bar {
+  background-color: #2196f3;
+}

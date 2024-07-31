@@ -1,0 +1,132 @@
+.transaction-history {
+  max-width: 1300px;
+  height: 650px;
+  margin: auto;
+  padding: 15px;
+  background-color: #f0f0f0;
+}
+
+.account-card {
+  background-color: #135915;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.trans {
+  margin: 1.3rem;
+  font-size: 1.3rem;
+}
+.sect h2 {
+  font-size: 2rem;
+  color: #135915;
+}
+.sect p {
+  font-size: 1.2rem;
+  color: #135915;
+}
+.trans{
+    color: #135915;
+}
+
+.account-card .account-info h2,
+.account-card .account-info h3 {
+  margin: 0;
+}
+.account-info button {
+  margin-left: 66rem;
+  background-color: rgb(26, 97, 26);
+  color: #f7f7f7;
+  font-size: large;
+  padding: 1rem 2px;
+  margin-top: -3rem;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f7f7f7;
+}
+
+.status-processing {
+  color: #ffa500;
+}
+
+.status-success {
+  color: #135915;
+}
+
+.status-declined {
+  color: #ff0000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.pagination span {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.pagination span:hover {
+  background-color: #e7e7e7;
+}
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 68rem;
+  margin-top: -2.5rem;
+}
+
+.filter-section label {
+  margin-right: 10px;
+}
+
+.filter-section select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.pagination span {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.pagination span.active {
+  background-color: #135915;
+  color: white;
+  font-weight: bold;
+}
+.prev{
+    padding: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #135915;
+}
+.prev:hover{
+    background-color: #135915;
+    color: white;
+}
