@@ -1,0 +1,44 @@
+.total-balance-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--neutral-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container {
+    margin-right: 20px;
+    
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .total-banks {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .balance-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .balance-label {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  .balance-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  

@@ -1,0 +1,145 @@
+/* src/css/signup.css */
+
+/* Container for the signup page */
+.signup-container {
+    display: flex;
+    height: 100%;
+    background-color: var(--neutral-color);
+    color: var(--text-color);
+}
+
+/* Styling for the form and image sections */
+.signup-form,
+.signup-image {
+    width: 50%;
+}
+
+/* Form styling */
+.signup-form {
+    padding: 40px;
+    max-width: 400px;
+    margin: auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--neutral-color);
+}
+
+/* Header section of the form */
+.signup-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+.signup-header span {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.signup-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.signup-header h1 {
+    color: black;
+    margin-bottom: 10px; /* Increase bottom margin */
+}
+
+.signup-header p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Form fields and layout */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px; /* Space between first name and last name fields */
+}
+
+.form-field {
+    flex: 1;
+}
+
+.form-field label {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+
+.form-field input,
+.form-field select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Primary button styling */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #004d40; /* Darker shade for hover */
+}
+
+/* Signup prompt styling */
+.signup-prompt {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-prompt a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Image container styling */
+.signup-image {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

@@ -1,0 +1,61 @@
+/* src/pages/Home.css */
+
+.home-container {
+    display: flex;
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  }
+  
+  .profile-sidebar {
+    width: 250px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Fix the sidebar to the right side */
+    top: 0;
+    right: 0; /* Align to the right side */
+    height: 100vh; /* Ensure the sidebar takes the full height of the viewport */
+  }
+  
+  .home-content {
+    flex: 1;
+    margin-right: 260px; /* Create space for the fixed sidebar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+  }
+  
+  .welcome {
+    margin-bottom: 20px; /* Space below the welcome section */
+  }
+  
+  .welcome h1 {
+    font-size: 2rem;
+    color: aliceblue;
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  .welcome p {
+    font-size: 1rem;
+    color: aliceblue;
+  }
+  
+  .bal {
+    margin-bottom: 20px; /* Space below the TotalBalanceBox */
+ 
+}
+  
+  .trans {
+    flex: 1; /* Ensure RecentTransactions takes up the remaining space */
+  }
+  
+  /* Additional styles to ensure a good appearance */
+  .bal, .trans {
+    background-color: #fff; /* Optional background color for clarity */
+    padding: 15px; /* Optional padding for better spacing */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+  }
+  
