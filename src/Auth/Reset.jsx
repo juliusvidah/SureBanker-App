@@ -44,7 +44,7 @@ const Reset = () => {
 
     // Redirect to login page after successful password reset
     setTimeout(() => {
-      navigate("/Sigin");
+      navigate("/Signin");
     }, 2000); // 2-second delay to show the success message before redirecting
   };
 
