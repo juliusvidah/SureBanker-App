@@ -101,6 +101,13 @@ const allTransactions = [
     date: "Tue 5:43am",
     category: "School fees",
   },
+  {
+    transaction: "Lezak Julius",
+    amount: "-$100.20",
+    status: "Declined",
+    date: "Tue 5:43am",
+    category: "School fees",
+  },
   // Add more transactions as needed
 ];
 
