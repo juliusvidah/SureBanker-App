@@ -1,0 +1,70 @@
+/* Basic Styles for the Bank Card */
+.cc {
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+    width: 295px;
+    height: 174px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 18px -1px #2E2E2E;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .cc visa {
+    background-image: linear-gradient(to top right, #52B6FE, #6154FE);
+  }
+  
+  .cc mastercard {
+    background-image: linear-gradient(to top right, #843E3D, #040B2E);
+  }
+  
+  /* Card SVG Path */
+  .cc svg path {
+    fill: transparent;
+    stroke: #FFFFFF;
+    stroke-width: 2px;
+    stroke-linecap: round;
+  }
+  
+  /* Container for Card Information */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Card Type Display */
+  .type {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  /* Card Network Icon */
+  .circuit i {
+    color: white;
+  }
+  
+  /* Holder Info Section */
+  .holder {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .holder .name {
+    display: block;
+    font-size: 14px;
+    color: #CCCCCC;
+  }
+  
+  .holder .number {
+    display: block;
+    font-weight: 500;
+  }
+  

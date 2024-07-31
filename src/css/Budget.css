@@ -1,0 +1,27 @@
+.budget-content {
+    padding: 20px;
+    background-color: var(--neutral-color);
+    height: 100vh; /* Ensure the content takes up the full height of the viewport */
+  }
+  
+  .budget-welcome {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .budget-welcome h1 {
+    font-size: 2rem; /* 32px */
+    margin-bottom: 10px;
+  }
+  
+  .budget-welcome p {
+    font-size: 1.125rem; /* 18px */
+    margin: 0;
+  }
+  

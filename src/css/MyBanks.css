@@ -1,0 +1,47 @@
+.my-bankscard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .my-bankscard h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card-grid .bank-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00c853;
+    color: #fff;
+    font-size: 18px;
+    height: 174px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 2px dashed #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .add-card i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .add-card:hover {
+    background-color: #006d32;
+  }
+  

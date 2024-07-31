@@ -143,7 +143,7 @@ const Signup = () => {
         </div>
       </div>
       <div className="signup-image">
-        <img src="https://res.cloudinary.com/duicyr28v/image/upload/v1722360808/Design_Glow_GIF_by_xponentialdesign_-_Find_Share_on_GIPHY_cjixtn.gif" alt="Background" />
+        <img src="https://res.cloudinary.com/duicyr28v/image/upload/v1722404737/9951f78474309b2ddc3d44cc201c51be_kkjnqk.jpg" alt="Background" />
       </div>
     </div>
   );
