@@ -5,6 +5,8 @@ import Landingpage from './pages/Landingpage';
 import Signin from './Auth/Signin';
 import Signup from './Auth/Signup';
 import SBRoute from './SBRoute'; // Import SBRoute component
+import OTPInput from './Auth/OTPInput';
+import Reset from './Auth/Reset';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         {/* Authentication routes */}
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/otpinput" element={<OTPInput />} />
+        <Route path="/reset" element={<Reset />} />
         
         {/* All other routes handled by SBRoute */}
         <Route path="/*" element={<SBRoute />} />
