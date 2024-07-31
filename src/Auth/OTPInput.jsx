@@ -27,7 +27,7 @@ const OTPInput = () => {
     if (otp === generatedOtp) {
       setMessage("OTP verified successfully!"); // Redirect to login page after successful OTP verification
       setTimeout(() => {
-        navigate("/Home"); // Replace '/login' with the actual login route
+        navigate("/Signin");
       }, 2000); // 2-second delay to show the success message before redirecting
     } else {
       setMessage("Incorrect OTP. Please try again.");
